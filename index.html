@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fear & Greed Meter</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 2500px;
+    height: 2500px;
+    background: black;
+    overflow: hidden;
+}
+
+/* odstráni inline medzeru */
+iframe {
+    display: block;
+}
+
+#frame {
+    width: 2500px;
+    height: 2500px;
+    border: none;
+
+    transform: scale(3);
+    transform-origin: top left;
+}
+</style>
+
+<script>
+setInterval(function(){
+    document.getElementById("frame").src =
+        document.getElementById("frame").src;
+}, 3600000);
+</script>
+
+</head>
+
+<body>
+
+<iframe
+id="frame"
+src="https://feargreedmeter.com/">
+</iframe>
+
+</body>
+</html>
