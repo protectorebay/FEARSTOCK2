@@ -14,16 +14,16 @@ html, body {
     overflow: hidden;
 }
 
-iframe {
-    display: block;
-}
-
 #frame {
+    position: absolute;
+    left: -500px;   /* POSUN DOĽAVA */
+    top: 0;
+
     width: 2500px;
     height: 2500px;
     border: none;
 
-    transform: scale(3) translateX(-600px);
+    transform: scale(3);
     transform-origin: top left;
 }
 </style>
